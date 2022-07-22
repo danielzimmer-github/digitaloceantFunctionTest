@@ -6,6 +6,7 @@ spec:
     - github:
         branch: master
         deploy_on_push: true
+        repo: danielzimmer-github/digitaloceanFunctionTest
       name: go-api
       routes:
       - path: /
