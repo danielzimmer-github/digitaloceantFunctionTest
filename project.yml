@@ -1,0 +1,7 @@
+packages:
+  - name:sample
+    actions:
+      - name: hello
+        main: ''
+        runtime: 'go:default'
+        
