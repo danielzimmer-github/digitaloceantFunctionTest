@@ -1,13 +1,17 @@
 package main
 
-import ("fmt")
+import (
+	"fmt"
+)
+
 type Request struct {
 	Name string 'json:"name"'
 }
+
 type Response struct {
-	StatusCode int `json:"statusCode,omitempty"`
-	Headers map[string]string `json:"headers,omitempty"`
-	Body string `json:"body,omitempty"`
+	StatusCode 	int 				`json:"statusCode,omitempty"`
+	Headers 	map[string]string 	`json:"headers,omitempty"`
+	Body 		string 				`json:"body,omitempty"`
 }
 
 func Main(in Request) (*Response, error) {
@@ -17,6 +21,5 @@ func Main(in Request) (*Response, error) {
 
 	return &Response{
 		Body: fmt.Sprintf("Hello %s", in.Name),
-
 	}, nil
 }
