@@ -5,7 +5,7 @@ import (
 )
 
 type Request struct {
-	Name string 'json:"name"'
+	Name string `json:"name"`
 }
 
 type Response struct {
