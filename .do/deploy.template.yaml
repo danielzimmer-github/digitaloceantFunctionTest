@@ -10,5 +10,6 @@ spec:
       name: go-api
       routes:
       - path: /
+      - path: /pound/
       source_dir: /
     name: go-danieltest
