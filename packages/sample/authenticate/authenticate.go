@@ -32,13 +32,11 @@ func Main(in CoolThings) (*Response, error) {
 	}
 	if in.Text == "" {
 		return &Response{
-			Body: fmt.Sprintf("No text submitted"),
+			Body: fmt.Print("No text submitted"),
 		}, nil
 	}
 
-
-
 	return &Response{
-		Body: fmt.Sprintf("Authenticate %s", in.Name),
+		Body: fmt.Sprintf("Authenticate %s %s", in.Name, in.Text),
 	}, nil
 }
