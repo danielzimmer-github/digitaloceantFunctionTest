@@ -20,5 +20,10 @@ packages:
         runtime: 'go:default'
         environment: {}
         parameters: {}
+      - name: getdbuser
+        mail: ''
+        runtime: 'go:default'
+        environment: {}
+        parameters: {}
 
         
