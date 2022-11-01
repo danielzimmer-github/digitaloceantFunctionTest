@@ -9,12 +9,12 @@ packages:
       DATABASE_PASSWORD: ${password}
       DATABASE_NAME: ${dbname}
     parameters: {}
-    actions:
-      - name: hello
-        main: ''
-        runtime: 'go:default'
-        environment: {}
-        parameters: {}
+     actions:
+    #   - name: hello
+    #     main: ''
+    #     runtime: 'go:default'
+    #     environment: {}
+    #     parameters: {}
       - name: authenticate
         mail: ''
         runtime: 'go:default'
