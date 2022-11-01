@@ -2,7 +2,12 @@ parameters: {}
 environment: {}
 packages:
   - name: sample
-    environment: {}
+    environment: 
+      DATABASE_USERNAME: ${host}
+      DATABASE_PORT: ${port}
+      DATABASE_USER: ${user}
+      DATABASE_PASSWORD: ${password}
+      DATABASE_NAME: ${dbname}
     parameters: {}
     actions:
       - name: hello
