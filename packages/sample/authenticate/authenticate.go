@@ -21,6 +21,6 @@ func Main(in Request) (*Response, error) {
 	}
 
 	return &Response{
-		Body: fmt.Sprintf("Hello %s %s", in.Name, in.Name),
+		Body: fmt.Sprintf("Hello %s %s", in.Name, in.Text),
 	}, nil
 }
