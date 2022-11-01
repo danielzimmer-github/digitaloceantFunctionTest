@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/lib/pq"
+	- "github.com/lib/pq"
 	"fmt"
 )
 
