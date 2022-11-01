@@ -6,6 +6,7 @@ import (
 
 type Request struct {
 	Name string `json:"name"`
+	Text string `json:"text"`
 }
 
 type Response struct {
@@ -20,6 +21,6 @@ func Main(in Request) (*Response, error) {
 	}
 
 	return &Response{
-		Body: fmt.Sprintf("Hello %s", in.Name),
+		Body: fmt.Sprintf("Hello %s %s", in.Name, in.Name),
 	}, nil
 }
