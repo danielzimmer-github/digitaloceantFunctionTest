@@ -32,7 +32,7 @@ func Main(in CoolThings) (*Response, error) {
 	}
 	if in.Text == "" {
 		return &Response{
-			Body: fmt.Sprintf("No text submitted");
+			Body: fmt.Sprintf("No text submitted"),
 		}, nil
 	}
 
