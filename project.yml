@@ -10,4 +10,10 @@ packages:
         runtime: 'go:default'
         environment: {}
         parameters: {}
+      - name: authenticate
+        mail: ''
+        runtime: 'go:default'
+        environment: {}
+        parameters: {}
+
         
